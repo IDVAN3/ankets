@@ -720,7 +720,7 @@ textarea.error {
   }
 
   .header__title {
-    font-size: 32px;
+    font-size: 38px;
   }
 
   .requirements__maintitle {
@@ -736,8 +736,8 @@ textarea.error {
   }
 }
 @media (max-width: 640px) {
-  .header__title {
-    font-size: 26px;
+  .requirements__opas {
+    background: none;
   }
 
   .header__subtitle {
@@ -750,6 +750,10 @@ textarea.error {
 
   .icons__item {
     flex: 0 0 100%;
+  }
+
+  .header {
+    background-position: 75% 55%;
   }
 }
 @media (max-width: 480px) {
