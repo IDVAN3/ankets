@@ -81,6 +81,98 @@
                 </div>
             </div>
         </section>
+        <div class="requirements__opas">
+        <section class="section-requirements">
+            
+            <div class="container">
+                <div class="requirements">
+                    <div class="requirements__left">
+                        <h2 class="requirements__maintitle">ТРЕБОВАНИЯ К СУРМАМАМ</h2>
+                        <div class="requirements__item">
+                            <img src="img/icons/plus.png" alt="">
+                            <div class="wrapper-text-requirements">
+                                <h2 class="requirements__title">18 до 35 лет</h2>
+                                <div class="requirements__subtitle">В программу принимаются девушки от 18 до 35 лет.</div>
+                            </div>
+                        </div>
+                        <div class="requirements__item">
+                            <img src="img/icons/mothe.png" alt="">
+                            <div class="wrapper-text-requirements">
+                                <h2 class="requirements__title">Наличие ребенка</h2>
+                                <div class="requirements__subtitle">Наличие собственного рождённого здорового ребёнка.</div>
+                            </div>
+                        </div>
+                        <div class="requirements__item">
+                            <img src="img/icons/stethoscope.png" alt="">
+                            <div class="wrapper-text-requirements">
+                                <h2 class="requirements__title">Медицинская пригодность</h2>
+                                <div class="requirements__subtitle">Отсутствие медицинских противопоказаний и вредных привычек.</div>
+                            </div>
+                        </div>
+                        <div class="requirements__item">
+                            <img src="img/icons/add.png" alt="">
+                            <div class="wrapper-text-requirements">
+                                <h2 class="requirements__title">Положительный резус-фактор</h2>
+                                <div class="requirements__subtitle">Мы ищем девушек только с положительным резус-фактором.</div>
+                            </div>
+                        </div>
+                        <div class="requirements__item">
+                            <img src="img/icons/save.png" alt="">
+                            <div class="wrapper-text-requirements">
+                                <h2 class="requirements__title">Психическая устойчивость</h2>
+                                <div class="requirements__subtitle">У суррогатной мамы должна быть моральная и психическая устойчивость.</div>
+                            </div>
+                        </div>
+                        <div class="requirements__item">
+                            <img src="img/icons/trading.png" alt="">
+                            <div class="wrapper-text-requirements">
+                                <h2 class="requirements__title">Высокий уровень ответственности</h2>
+                                <div class="requirements__subtitle">Мы отдаём предпочтение девушкам с высоким уровнем ответственности.</div>
+                            </div>
+                        </div>
+                        <div class="requirements__item">
+                            <img src="img/icons/deal.png" alt="">
+                            <div class="wrapper-text-requirements">
+                                <h2 class="requirements__title">Согласие супруга</h2>
+                                <div class="requirements__subtitle">Для тех, кто в официальном браке согласие супруга на участие в программе.</div>
+                            </div>
+                        </div>
+                        <div class="requirements__item">
+                            <img src="img/icons/car.png" alt="">
+                            <div class="wrapper-text-requirements">
+                                <h2 class="requirements__title">Возможность переезда</h2>
+                                <div class="requirements__subtitle">Готовность к переезду в период беременности.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="requirements__right">
+                        <div class="wrapper-requirements-form">
+                            <h4 class="form__subtitle">Для дополнительной информации</h4>
+                                <h2 class="form__title">Заполните анкету ниже и мы с Вами свяжемся</h2>
+                            <form action="" class="requirements__form">
+                                <label class="requirements__label">Ваши ФИО: </label>
+                                <input type="text" class="requirements__input" placeholder="Ваши ФИО">
+                                 <label class="requirements__label">Дата рождения: </label>
+                                <input type="text" class="requirements__input" placeholder="Дата рождения">
+                                 <label class="requirements__label">Количество детей и их возраст: </label>
+                                <input type="text" class="requirements__input" placeholder="Количество детей и их возраст">
+                                 <label class="requirements__label">Было ли кесарево сечение?: </label>
+                                <input type="text" class="requirements__input" placeholder="Было ли кесарево сечение?">
+                                 <label class="requirements__label">Группа крови: </label>
+                                <input type="text" class="requirements__input" placeholder="Группа крови">
+                                 <label class="requirements__label">Рост/вес: </label>
+                                <input type="text" class="requirements__input" placeholder="Рост/вес">
+                                <label class="requirements__label">Телефон (начиная с +3): </label>
+                                <input type="text" class="requirements__input" placeholder="Телефон (начиная с +3)">
+
+                                <button class="requirements-btn">Отправить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 <!-- подвал сайта -->
     </div>
 
@@ -90,7 +182,11 @@
         <div class="popup__wrapp js-popup__wrapp">
             <span class="popup__close js-popup__close"></span>
             <div class="popup_container">
-                <h2>Попап</h2>
+                <h2 class="popup__title">Перезвоним Вам в ближайшее время!</h2>
+                <form action="">
+                    <input type="text" onkeyup="this.value = this.value.replace(/[^\d+]/g,'');" class="popup__input" placeholder="Телефон">
+                    <button class="requirements-btn">Жду звонка!</button>
+                </form>
             </div>
         </div>
     </div>
@@ -99,6 +195,14 @@
         <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
             <path class="scroll-up__path js-scroll-up__path" d="M24,0 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48"/>
         </svg>
+    </div>
+
+    <div class="tel-fixed">
+        <a href="popup-0" class="js-btn-popup">
+            <div class="circle-telephone">
+                <img src="img/icons/trubka.png" alt="">
+            </div>
+        </a>
     </div>
     
     <!-- Подключеине скриптов -->

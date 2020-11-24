@@ -100,6 +100,13 @@ $(document).ready(function () {
         }
   })
 
+  $('.requirements__input').focusin(function(e){
+    $(this).prev(".requirements__label").css("opacity", "1")
+  })
+  $('.requirements__input').focusout(function(e){
+    $(this).prev(".requirements__label").css("opacity", "0")
+  })
+
 });
 /*кнопка прокрутки вверх*/
 
