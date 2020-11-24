@@ -220,7 +220,7 @@ li.counter li:before {
   background-repeat: no-repeat;
   background-image: url("../img/orig.jpg");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 40%;
   width: 100%;
   height: 543px;
   opacity: 1;
@@ -237,7 +237,23 @@ li.counter li:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 255, 0, 0.5);
+  background: #6020d2;
+  background: linear-gradient(to right, #6020d2 0, #2e67f5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#6020d2", endColorstr="#2e67f5", GradientType=1 );
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: alpha(opacity=46);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=46)";
+  -webkit-opacity: 0.46;
+  -khtml-opacity: 0.46;
+  -moz-opacity: 0.46;
+  -ms-opacity: 0.46;
+  -o-opacity: 0.46;
+  opacity: 0.46;
   padding: 30px;
 }
 .header__logo {
@@ -253,6 +269,7 @@ li.counter li:before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 1;
 }
 .header__title {
   font-size: 60px;
@@ -267,6 +284,11 @@ li.counter li:before {
   padding: 60px 0;
   color: #fff;
 }
+.header__selected-lang {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
 
 .h100 {
   height: 100%;
@@ -275,6 +297,10 @@ li.counter li:before {
 .wrapper-header-top {
   display: flex;
   justify-content: space-between;
+}
+
+.hidden {
+  display: none;
 }
 
 input.error,
@@ -313,7 +339,6 @@ textarea.error {
   display: flex;
   cursor: pointer;
   height: 100%;
-  padding-left: 28px;
 }
 
 .select__icon {
@@ -341,10 +366,10 @@ textarea.error {
   display: none;
   background: transparent;
   position: absolute;
-  left: 0;
+  left: -8px;
   right: 0;
   top: 100%;
-  max-width: 160px;
+  width: 160px;
   z-index: 999;
 }
 
@@ -405,12 +430,12 @@ textarea.error {
   text-align: center;
 }
 
-.circle-yellow {
-  background: #F0FF18;
+.circle-green {
+  background: #0BDA51;
 }
 
 .circle-blue {
-  background: #00FFFF;
+  background: #3A75C4;
 }
 
 .circle-orange {

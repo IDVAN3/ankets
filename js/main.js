@@ -62,7 +62,6 @@ $(document).ready(function () {
             let text = this.innerText,
                 select = this.closest('.select'),
                 currentText = select.querySelector('.select__current');
-                console.log(text)
             currentText.innerText = text;
             select.classList.remove('is-active');
 
@@ -81,6 +80,25 @@ $(document).ready(function () {
     });
 
     select();
+
+
+    /* toggle icon language */
+
+    $('.select__item').click(function(e){
+        e.preventDefault();
+        let elem = $(this).attr('data-language');
+
+        if (elem == "Ukrainian") {
+          $(".header__selected-lang.ukr").removeClass('hidden');
+          $(".header__selected-lang.rus").addClass('hidden');
+          
+        }
+        else if (elem == "Russian") {
+          $(".header__selected-lang.rus").removeClass('hidden');
+          $(".header__selected-lang.ukr").addClass('hidden');
+        //   console.log(elem)
+        }
+  })
 
 });
 /*кнопка прокрутки вверх*/
